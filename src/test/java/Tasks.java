@@ -14,25 +14,16 @@ public class Tasks {
 
     private ChromeDriver driver;
     private String baseUrl = "https://alan-systems.com/pl/";
-
     private WebDriverWait wait;
-
-
     private HomePage homePage;
-
     private ForBusiness forBusiness;
-
     private ForCandidaes forCandidaes;
-
     private AboutUs aboutUs;
-
     private Offer offer;
-
     private Contact contact;
 
     @BeforeClass
     public void setUp() {
-        // ChromeOptions options = new ChromeOptions();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
@@ -53,7 +44,6 @@ public class Tasks {
         offer = new Offer(driver);
 
         contact = new Contact(driver);
-
 
     }
 
